@@ -52,24 +52,25 @@
 
 //delta = b2-4ac
 
-let a = +prompt("Nhập giá trị a")
-let b = +prompt("Nhập giá trị b")
-let c = +prompt("Nhập giá trị c")
+// let a = +prompt("Nhập giá trị a")
+// let b = +prompt("Nhập giá trị b")
+// let c = +prompt("Nhập giá trị c")
 
-if (a === 0) {
-    if (b === 0){
-       let x = b** - ((4*a)+(4*c));
-       alert(`X có kết quả là ... ${x}`) 
-    }alert("Giá trị sai")
-}
+// if (a === 0) {
+//     if (b === 0){
+//        let x = b** - ((4*a)+(4*c));
+//        alert(`X có kết quả là ... ${x}`) 
+//     }alert("Giá trị sai")
+// }
 
 
 // Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+//Một số nguyên là tuổi của một người khi nhỏ 120 và lớn hơn 0.
 
+let age = +prompt("Hãy nhập tuổi của bạn vào đây nhé !")
 
-
-
-
-
-// Một số nguyên là tuổi của một người khi nhỏ 120 và lớn hơn 0.
-
+while (age <= 0 || age >= 120 || isNaN(age)){
+    alert("bla...bla...age.");
+    age = +prompt("Hãy nhập lại tuổi của bạn vào đây nhé !");
+}
+alert(`${age} là tuổi của bạn sao ... tks !`);
